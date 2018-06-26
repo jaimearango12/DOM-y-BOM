@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DocumentCookie</title>
+    <script>
+        //SOLO FUNCIONA CON SAFARI
+        function cookies(){
+            var miDiv = document.getElementById("miDiv");
+            document.cookie="clave=1234";//Se crea una cookie
+            miDiv.innerHTML="Cookies: " + document.cookie //se muestra la cookie en el div
+        }
+    </script>
+</head>
+<body>
+    <div id="miDiv">
+
+    </div>
+    <button onclick="cookies()">COOKIES</button>
+</body>
+</html>

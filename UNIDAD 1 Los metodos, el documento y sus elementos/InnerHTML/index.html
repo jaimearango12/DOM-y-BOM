@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <p id="p1">Mi Parrafo!!!</p>
+    <button onclick="cambiarContenido()">Cambiar Parrafo</button>
+</body>
+<script>
+    function cambiarContenido(){
+        var p = document.getElementById("p1");
+        p.innerHTML = "Parrafo cambiado";
+    }
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setAttribute</title>
+</head>
+<body>
+    Nombre:
+    <input type="text" id="nombre" size="20">
+    <button onclick="cambiarAtributo()">Cambiar tamaño</button>
+</body>
+<script>
+    function cambiarAtributo() {
+        var cajatxt = document.getElementById("nombre");
+        cajatxt.setAttribute("size", "60");
+    }
+</script>
+</html>

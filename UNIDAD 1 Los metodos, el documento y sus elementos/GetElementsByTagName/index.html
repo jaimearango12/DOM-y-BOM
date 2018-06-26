@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GetElementsByTagName</title>
+</head>
+<body>
+    <div>mi div 1</div>
+    <div>mi div 2</div>
+    <div>mi div 3</div>
+    <button onclick="cambiarDivs()">Cambar divs</button>
+</body>
+<script>
+    function cambiarDivs() {
+        var divs = document.getElementsByTagName("div");
+
+        for(i=0;i<divs.length;i++){
+            divs[i].style.color ="orange";
+        }
+    }
+</script>
+</html>

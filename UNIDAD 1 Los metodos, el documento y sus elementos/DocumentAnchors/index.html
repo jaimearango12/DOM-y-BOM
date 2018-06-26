@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DocumentAnchors</title>
+</head>
+<body>
+    <a name="google" target="_blank" href="https://www.google.com">Google</a>
+    <br>
+    <a name="youtube" target="_blank" href="https://www.google.com">Youtube</a>
+    <br>
+    <a name="facebook" target="_blank" href="https://www.google.com">Facebook</a>
+    <br>
+    <a name="instagram" target="_blank" href="https://www.instagram.com">Instagram</a>
+    <br>
+    <div id="numero"></div>
+
+    <button onclick="numeroAnclas()">Numero de elementos a</button>
+
+</body>
+<script>
+    function numeroAnclas(){
+        document.getElementById("numero").innerHTML = "Numeros de elementos ancla <a>: " + document.anchors.length;
+    }
+</script>
+</html>

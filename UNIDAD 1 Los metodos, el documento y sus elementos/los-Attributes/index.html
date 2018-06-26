@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> los Attributes</title>
+    <script>
+    //obtiene los atributos de un documento o elemento
+    function obtenerAtributos(){
+        var atributos = "";
+        var miDiv=document.getElementById("miDiv");
+        //for recorre y va asignando todos los atributos que tiene miDiv conociento los atributos y los concatena
+        for (var i = 0;i<miDiv.attributes.length;i++){
+            atributos += miDiv.attributes[i].name + " : " + miDiv.attributes[i].value + "<br>";
+        }   //muestra el nombre y el valor del atributo
+        document.getElementById("p1").innerHTML = atributos;
+        }
+    </script>
+</head>
+<body>
+    <div id="miDiv" style="background-color: red;">
+        mi Div!!
+    </div>
+    <p id="p1"></p>
+    <button onclick="obtenerAtributos()">Cambiar parrafo</button>
+</body>
+</html>
