@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EventListener</title>
+</head>
+<body>
+    <button id="boton1">Mostrar</button>
+
+    <script>
+        var nombre = "Juan Perez";
+        var estatura = 1.80;
+
+        document.getElementById("boton1").addEventListener("click", function(){
+            saludar(nombre, estatura);
+        });
+
+        function saludar(nombre, estatura) {
+            alert ("hola " + nombre + ", " + "mides: " + estatura + " Mts");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function hijos() {
+            var texto = "";
+
+            var div = document.getElementsByTagName("div")[0];
+
+            for(i=0 ; i<div.childNodes.length; i++){ //recorrer el  arreglo de nodes hijos para que nos devuelva la propiedad chilnodes del elemento div
+                texto+= div.childNodes[i].nodeName+"<br>"; // Colocar el nombre de los nodos hijos a la variable texto
+            }
+
+            document.getElementById("mensaje").innerHTML= texto; //cambiamos el html de un parrafo con id mensaje con el string texto
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>parrafo 1</p>
+        <p>parrafo 2</p>
+        <p>parrafo 3</p>
+    </div>
+        <button onclick="hijos()">Nodos Hijos</button>
+
+        <p id="mensaje"></p>
+    
+</body>
+</html>

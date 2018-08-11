@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event listener</title>
+</head>
+<body>
+    <button id="boton1">Mostar Alert</button>
+    <script>
+        var elemento = document.getElementById("boton1");
+        elemento.addEventListener("click", mostarMensaje1);
+        elemento.addEventListener("mouseover", mostarMensaje2);
+
+        function mostarMensaje1(argument){
+            alert("EventListener1");
+        }
+
+        function mostarMensaje2(argument){
+            alert("EventListener2");
+        }
+    </script>
+</body>
+</html>
